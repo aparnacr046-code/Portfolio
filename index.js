@@ -1,24 +1,4 @@
-/*(function sendMail(){
-    var params={
-        name:document.getElementById("Name").value , 
-        email:document.getElementById("email").value,
-        message:document.getElementById("message").value
-    };
- const serviceID="service_x6rjzra";
- const templateID="template_h3s5hkl";
 
- emailjs.send(serviceID,templateID,params)
- .then(
-    res=>{
-        document.getElementById("Name").value= "";
-        document.getElementById("email").value= "";
-        document.getElementById("message").value= "";
-        console.log(res);
-        alert("your message send succesfully")
-    }
- )
- .catch(err=>console.log(err));
-})*/
 (function () {
     emailjs.init("_r7Ic9B7YGyhOJkMQ"); 
   })();
@@ -49,4 +29,5 @@
   document.getElementById("contactform").addEventListener("submit", function (e) {
     e.preventDefault();
     sendMail();
+
   });
