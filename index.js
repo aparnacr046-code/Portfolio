@@ -20,14 +20,14 @@
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("✅ Your message was sent successfully!");
       })
       .catch((err) => console.error("❌ Error:", err));
   }
 
-  
+  alert("✅ Your message was sent successfully!");
   document.getElementById("contactform").addEventListener("submit", function (e) {
     e.preventDefault();
     sendMail();
 
   });
+
