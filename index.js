@@ -22,12 +22,13 @@
         console.log(res);
       })
       .catch((err) => console.error("❌ Error:", err));
+      alert("✅ Your message was sent successfully!");
   }
 
-  alert("✅ Your message was sent successfully!");
   document.getElementById("contactform").addEventListener("submit", function (e) {
     e.preventDefault();
     sendMail();
 
   });
+
 
